@@ -1,0 +1,257 @@
+#copy{
+    color:red;
+    padding:1em 0;
+    text-align:center;
+    font-size:.8em;
+    font-weight:700;
+    color:#fff8;
+  }  
+.typenameauto {
+    text-align: center;
+    color:#fff;
+    padding-top:10em;
+    font-size: 30px;
+}
+
+hr{ 
+    display:block;
+    width:200px;
+    background:var(--ci5);
+    height:4px;
+    margin:auto;
+} 
+
+.hr2{ 
+    display:block;
+    width:100px;
+    background:var(--ci5);
+    height:2px;
+    margin:auto;
+}
+  
+section{
+    /* width: 100vw; */
+    height: 100vh;
+}
+
+  body {
+      background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+      margin: 0;
+      padding: 0;
+      --ci5:hsl(0, 0%, 70%);
+  }
+  @keyframes gradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }
+/* * {
+    box-sizing: border-box;
+} */
+
+.navbar {
+    border-radius: 5px;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+}
+
+.title {
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}
+
+.navbar-links li:hover {
+    background-color: #555;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
+.line-1{
+    position: relative;
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+.textprofile{
+    color:#fff;
+}
+img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    margin-top: 3rem;
+    height: 200px;
+    width: 200px;
+    border-radius:40px;
+} 
+
+.makeitcenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+.container {
+    overflow: hidden;
+    box-shadow: 0px 2px 8px 0px var(--clr-gray-light);
+    background-color: white;
+    text-align: center;
+    border-radius: 3rem;
+    position: relative;
+    width: 280px;
+    margin-bottom: 1rem;
+    margin-left: 3rem;
+  }
+  
+.banner-img {
+    position: absolute;
+    background-image: url("https://media.discordapp.net/attachments/979313372485013514/979530768151879700/Screen_Shot_2565-05-27_at_06.42.18.png");
+    height: 10rem;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+.profile-img {
+    width: 8rem;
+    clip-path: circle(60px at center);
+    margin-top: 4rem;
+  }
+  
+.name {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+  
+.description {
+    margin: 1rem 2rem;
+    font-size: 0.9rem;
+}
+  
+.btn {
+    width: 100%;
+    border: none;
+    font-size: 1rem;
+    color: blue;
+    padding: 1rem;
+    background-color: var(--clr-primary);
+}
+.parag{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
